@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/calendar-time-svgrepo-com.svg"
+    />
+    <link rel="stylesheet" href="./src/scss/styles.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: #fff;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- APP -->
+    <main class="app">
+      <div class="reportProfile">
+        <!-- Profile Header - Image, Name -->
+        <div class="reportProfile__header">
+          <img src="./images/image-jeremy.png" alt="" class="profile-img" />
+          <div class="reportFor">
+            <p>Report For</p>
+            <h2 class="profile-name">Jeremy Robson</h2>
+          </div>
+        </div>
+
+        <!-- Daily, Weekly, Montly Buttons/Links -->
+        <ul class="reportProfile__options">
+          <li class="option daily">Daily</li>
+          <li class="option weekly">Weekly</li>
+          <li class="option monthly">Monthly</li>
+        </ul>
+      </div>
+
+      <!-- Work, Play, Study, Exercise, Social and Self Care Boxes -->
+      <ul class="workBoxes">
+        <!-- #1 -->
+        <li class="workBoxes__item workTime">
+          <div class="item-background" id="work">
+            <!-- Box Details -->
+            <div class="item-details">
+              <div class="header">
+                <p>Work</p>
+                <img src="./images/icon-ellipsis.svg" alt="" class="moreIcon" />
+              </div>
+
+              <!-- Rest of details box -->
+              <div class="hours">
+                <span class="hoursSpent">0hrs</span>
+                <p>Last Week - <span class="lastWeek"></span>hrs</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- #2 -->
+        <li class="workBoxes__item playTime">
+          <div class="item-background" id="play">
+            <!-- Box Details -->
+            <div class="item-details">
+              <div class="header">
+                <p>Play</p>
+                <img src="./images/icon-ellipsis.svg" alt="" class="moreIcon" />
+              </div>
+
+              <!-- Rest of details box -->
+              <div class="hours">
+                <span class="hoursSpent">0hrs</span>
+                <p>Last Week - <span class="lastWeek"></span>hrs</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- #3 -->
+        <li class="workBoxes__item studyTime">
+          <div class="item-background" id="study">
+            <!-- Box Details -->
+            <div class="item-details">
+              <div class="header">
+                <p>Study</p>
+                <img src="./images/icon-ellipsis.svg" alt="" class="moreIcon" />
+              </div>
+              <!-- Rest of details box -->
+              <div class="hours">
+                <span class="hoursSpent">0hrs</span>
+                <p>Last Week - <span class="lastWeek"></span>hrs</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- #4 -->
+        <li class="workBoxes__item exerciseTime">
+          <div class="item-background" id="exercise">
+            <!-- Box Details -->
+            <div class="item-details">
+              <div class="header">
+                <p>Exercise</p>
+                <img src="./images/icon-ellipsis.svg" alt="" class="moreIcon" />
+              </div>
+
+              <!-- Rest of details box -->
+              <div class="hours">
+                <span class="hoursSpent">0hrs</span>
+                <p>Last Week - <span class="lastWeek"></span>hrs</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- #5 -->
+        <li class="workBoxes__item socialTime">
+          <div class="item-background" id="social">
+            <!-- Box Details -->
+            <div class="item-details">
+              <div class="header">
+                <p>Social</p>
+                <img src="./images/icon-ellipsis.svg" alt="" class="moreIcon" />
+              </div>
+
+              <!-- Rest of details box -->
+              <div class="hours">
+                <span class="hoursSpent">0hrs</span>
+                <p>Last Week - <span class="lastWeek"></span>hrs</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- #6 -->
+        <li class="workBoxes__item selfCareTime">
+          <div class="item-background" id="selfCare">
+            <!-- Box Details -->
+            <div class="item-details">
+              <div class="header">
+                <p>Self Care</p>
+                <img src="./images/icon-ellipsis.svg" alt="" class="moreIcon" />
+              </div>
+
+              <!-- Rest of details box -->
+              <div class="hours">
+                <span class="hoursSpent">0hrs</span>
+                <p>Last Week - <span class="lastWeek"></span>hrs</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <!-- Frontend Mentor Author Code -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tony Spunei</a>.
+    </div>
+
+    <script src="./src/js/app.js" type="module"></script>
+  </body>
+</html>

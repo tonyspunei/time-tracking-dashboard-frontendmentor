@@ -1,0 +1,98 @@
+.reportProfile {
+  min-height: 12.6875rem;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 24px;
+
+  @include breakpoint-up(large) {
+    height: 518px;
+    width: 255px;
+  }
+
+  &__header {
+    height: 8.3125rem;
+    width: 100%;
+    background: $blue;
+    padding: 0 1.75rem;
+
+    // Prototype Solution
+    z-index: 5;
+    position: relative;
+
+    // Display Styles
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+
+    @include breakpoint-up(large) {
+      height: 354px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .profile-img {
+      height: 4.375rem;
+      width: auto;
+      border: 2px solid white;
+      border-radius: 50%;
+      margin-right: 1rem;
+
+      @include breakpoint-up(large) {
+        margin-bottom: 2.3rem;
+      }
+    }
+
+    // Profile Text
+    .reportFor {
+      p {
+        color: $paleBlue;
+        line-height: 1.5;
+      }
+      .profile-name {
+        font-weight: 300;
+        color: white;
+
+        @include breakpoint-up(large) {
+          font-size: 2.3rem;
+        }
+      }
+    }
+  }
+
+  &__options {
+    height: 70px;
+    color: $desaturatedBlue;
+    background: $darkBlue;
+    box-shadow: 0px -20px 1px $darkBlue;
+    z-index: 1;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+
+    @include breakpoint-up(large) {
+      height: 164px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      padding: 0 33px;
+    }
+
+    .option {
+      transition: 0.3s all ease-in-out;
+
+      &.active {
+        color: #fff;
+      }
+    }
+
+    .option:hover {
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

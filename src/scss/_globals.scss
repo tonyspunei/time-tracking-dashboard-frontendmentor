@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import "mixins";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background: $veryDarkBlue;
+
+  @include breakpoint-up(large) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.app {
+  overflow-x: hidden;
+
+  // Padding Mobile
+  padding: 5.0625rem 1.5rem;
+
+  @include breakpoint-up(medium) {
+    overflow-x: visible;
+    padding: 1rem 1.5rem;
+  }
+
+  // Padding Desktop
+  @include breakpoint-up(large) {
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 255px 825px;
+    grid-template-rows: 519px;
+    gap: 30px 30px;
+  }
+}
+
+.attribution {
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}
